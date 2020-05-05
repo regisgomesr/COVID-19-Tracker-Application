@@ -26,8 +26,8 @@ const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate } } ) => {
                                 separator='.'
                             />
                         </Typography>
-                        <Typography colr='textSecondary'>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of active cases of COVID-19</Typography>
+                        <Typography colr='textSecondary'>{new Date(lastUpdate).toLocaleDateString()}</Typography>
+                        <Typography variant='body2'>Números de casos ativos da COVID-19</Typography>
                     </CardContent>
                 </Grid>
 
@@ -42,8 +42,8 @@ const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate } } ) => {
                                 separator='.'
                             />
                         </Typography>
-                        <Typography colr='textSecondary'>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of recoveries from COVID-19</Typography>
+                        <Typography colr='textSecondary'>{new Date(lastUpdate).toLocaleDateString()}</Typography>
+                        <Typography variant='body2'>Números de curados da COVID-19</Typography>
                     </CardContent>
                 </Grid>
 
@@ -58,8 +58,8 @@ const Cards = ( { data: { confirmed, recovered, deaths, lastUpdate } } ) => {
                                 separator='.'
                             />
                         </Typography>
-                        <Typography colr='textSecondary'>{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant='body2'>Number of deaths caused of COVID-19</Typography>
+                        <Typography colr='textSecondary'>{new Date(lastUpdate).toLocaleDateString()}</Typography>
+                        <Typography variant='body2'>Números de mortes causados pela COVID-19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
