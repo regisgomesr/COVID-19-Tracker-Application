@@ -11,7 +11,6 @@ const Chart = () => {
         const fetchAPI = async () => {
             setDailyData(await fetchDailyData())
         }
-        console.log(dailyData)
 
         fetchAPI()
     }, [])
@@ -28,13 +27,8 @@ const Chart = () => {
                 label: 'Infectados',
                 borderColor: '#3333ff',
                 fill: true
-              }, {
-                data: dailyData.map(({ recovered }) => recovered ),
-                label: 'Recuperados',
-                borderColor: 'green',
-                backgroundColor: 'rgba(0, 255, 0, 0.5)',
-                fill: true
-              }, {
+              },
+              {
                 data: dailyData.map(({ deaths }) => deaths ),
                 label: 'Mortes',
                 borderColor: 'red',
